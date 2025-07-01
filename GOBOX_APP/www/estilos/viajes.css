@@ -1,0 +1,117 @@
+ body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #fff;
+        }
+
+        a, button {
+          transition: transform 0.2s ease;
+        }
+
+        a:hover, button:hover {
+          transform: scale(1.1);
+        }
+
+        .boton-borrar {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+
+        .icono-eliminar {
+          width: 24px;
+          height: 24px;
+          filter: brightness(0); /* negro */
+        }
+
+        .boton-borrar:hover .icono-eliminar {
+          transform: scale(1.1);
+        }
+
+        .encabezado {
+          background-color: #ffa940;
+          color: white;
+          display: flex;
+          align-items: center;
+          padding: 1rem;
+        }
+
+        .encabezado h1 {
+          flex: 1;
+          text-align: center;
+          margin: 0;
+          font-size: 2rem;
+        }
+
+        .flecha {
+          height: 30px;
+        }
+
+        .main {
+          padding: 1rem;
+        }
+
+        .lista-viaje {
+          display: flex;
+          color: black;
+          flex-direction: column;
+          gap: 2rem;
+          margin-bottom: 80px;
+        }
+
+        .carta-viaje {
+          border: 1px solid #ffa940;
+          padding: 1rem;
+          border-radius: 8px;
+          text-align: center;
+          position: relative;
+          background-color: #f9f9f9;
+          transition: transform 0.2s ease;
+        }
+
+        .carta-viaje:hover {
+          transform: scale(1.02);
+        }
+
+        .boton-viaje {
+          position: fixed;
+          bottom: 70px;
+          right: 20px;
+          background-color: #ff981b;
+          color: white;
+          border: none;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          font-size: 2rem;
+          cursor: pointer;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .navbar {
+          background-color: #ff981b;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          padding: 0.5rem 0;
+        }
+
+        .navbar a img {
+          width: 24px;
+          height: 24px;
+          filter: brightness(10); /* blanco */
+
+        }
+        .boton-viaje:hover {
+  background-color: #e37f00;
+  transform: scale(1.1);
+}
+.boton-borrar:hover .icono-eliminar {
+  transform: scale(1.2);
+  filter: brightness(0.4) sepia(1) hue-rotate(-30deg) saturate(4); /* Color anaranjado oscuro */
+}

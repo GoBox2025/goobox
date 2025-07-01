@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.caja {
+  background-color: #ff9600;
+  padding: 90px 40px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  max-width: 450px;
+  height: 100%;
+
+
+}
+
+.caja h2 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.grupo {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.grupo input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+
+}
+
+.icono-correo {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 21px;
+}
+
+.icono-clave {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+}
+
+.grupo input::placeholder {
+  color: #999;
+}
+
+.olvido {
+  text-align: right;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.olvido a {
+  color: white;
+  text-decoration: none;
+}
+
+.olvido a:hover {
+  text-decoration: underline;
+}
+
+.boton {
+  background-color: #5c3b1e;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.registro {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: white;
+}
+
+.registro a {
+  color: white;
+  text-decoration: underline;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #f59e1c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

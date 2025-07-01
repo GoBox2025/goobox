@@ -1,0 +1,20 @@
+#chat-container {
+    width: 95%;
+    height: 900px;
+    border: 1px solid #ccc;
+    background: white;
+    padding: 10px;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+}

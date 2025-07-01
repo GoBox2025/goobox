@@ -1,0 +1,228 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.barra-arriba {
+  height: 40px;
+  background: linear-gradient(90deg, #ff6f00, #ff9500);
+}
+
+.icono {
+  display: flex;
+  gap: 90px;
+}
+
+.icono img {
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.icono img:hover {
+  transform: scale(1.1);
+}
+
+.imagen-pedido {
+  display: block;
+  max-width: 120px;
+  margin: 2px auto 5px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.contenedor {
+  background: #fff;
+  max-width: 640px;
+  margin: 10px auto;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 15px;
+  color: #555;
+  margin: 8px 0 2px;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 10px;
+}
+
+/* Detalles en columnas compactas */
+.detalle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 16px;
+}
+
+.detalle h2, .detalle p {
+  margin: 0;
+}
+
+/*******************************************************************/
+/*******************************************************************/
+
+    /* Contenedor para centrar el botón */
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    /* Estilos del botón */
+    .btn-31,
+    .btn-31 *,
+    .btn-31 :after,
+    .btn-31 :before,
+    .btn-31:after,
+    .btn-31:before {
+      border: 0 solid;
+      box-sizing: border-box;
+    }
+
+    .btn-31 {
+      -webkit-tap-highlight-color: transparent;
+      /*-webkit-appearance: button;*/
+      background-color: #ff9500; /* Color normal */
+      margin: 20px 0 60px;
+      padding: 10px 24px;
+      background-image: none;
+      color: #fff; /* Color de texto base */
+      cursor: pointer;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 100%;
+      font-weight: 900;
+      line-height: 1.5;
+      /*-webkit-mask-image: -webkit-radial-gradient(#000, #fff);*/
+      transition: background-color 0.2s ease;
+      border-radius: 12px;
+    }
+
+    .btn-31:active {
+      background-color: #e74504; 
+    }
+
+    .btn-31:disabled {
+      cursor: default;
+    }
+
+    .btn-31:-moz-focusring {
+      outline: auto;
+    }
+
+    .btn-31 {
+      border-width: 1px;
+      padding: 1rem 2rem;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    .btn-31:before {
+      --progress: 100%;
+      background: #e74504;
+      -webkit-clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+      );
+      clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+      );
+      content: "";
+      inset: 0;
+      position: absolute;
+      transition: -webkit-clip-path 0.2s ease;
+      transition: clip-path 0.2s ease;
+      transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+      border-radius: 11px;
+    }
+
+    .btn-31:hover:before {
+      --progress: 0%;
+    }
+
+    .btn-31 .text-container {
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .btn-31 .text {
+      display: block;
+      font-weight: 900;
+      color: white !important; /* Fuerza el color blanco */
+      position: relative;
+      z-index: 2; /* Asegura que el texto esté sobre otros elementos */
+    }
+
+    .btn-31:hover .text {
+      -webkit-animation: move-up-alternate 0.3s ease forwards;
+      animation: move-up-alternate 0.3s ease forwards;
+    }
+
+    @keyframes move-up-alternate {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(80%); }
+      51% { transform: translateY(-80%); }
+      to { transform: translateY(0); }
+    }
+
+/*******************************************************************/
+/*******************************************************************/
+
+
+/* Mapa reducido */
+#map {
+  height: 220px;
+  width: 92%;
+  margin: 16px auto 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Footer compacto */
+footer .navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f7931e;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.04);
+}
+
+footer .icon img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.9;
+  transition: transform 0.2s ease;
+}
+
+footer .icon:hover img {
+  transform: scale(1.1);
+}

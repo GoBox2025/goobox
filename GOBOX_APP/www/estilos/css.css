@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #f89c26;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+
+    height: 80px;
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #5a3b27;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#filter-select {
+    background-color: white;
+    color: #5a3b27;
+    border: 2px solid #5a3b27;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23f89c26" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 24px;
+    padding-right: 40px;
+    cursor: pointer;
+}
+
+.orders {
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.order-card {
+    border: 2px solid #f89c26;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.order-info {
+    flex-grow: 1;
+}
+
+.order-arrow {
+    background-color: #f89c26;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ff8800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.iconos {
+  display: flex;
+  gap: 90px;
+}
+
+.iconos img {
+  width: 30px;
+  height: 30px;
+}
+.detalle-btn{
+
+    width: 30px;
+    background-color: #fda735; 
+    height: 70px;
+    border: none;
+    border-radius: 17px;
+    padding: 2px 2px;
+   margin: 2px 2px 2px 2px;
+   cursor: pointer;
+
+}
+
+#arrow{
+   height: 20px;
+   
+}
+.detalle-btn:hover {
+  background-color: #e07b00; /* Un tono más oscuro al hacer hover */
+  transform: scale(1.05);    /* Hace que crezca un poquito al pasar el mouse */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}

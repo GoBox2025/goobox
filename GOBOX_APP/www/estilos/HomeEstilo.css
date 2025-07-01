@@ -1,0 +1,74 @@
+body{
+    font-family: Arial,  sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*Estilo de la imagen de GOBOX utilizando id*/
+.Saludo{
+ display: flex;
+ 
+ justify-content: flex-start;
+ 
+ flex-wrap: wrap;
+ max-width: 80%;
+}
+
+
+#logo{
+    height: 38px;
+   
+}
+/*estilo para el boton de agregar pedido*/
+button{
+    background-color: #fda735;
+    height: 70px;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 50px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: .3s;
+}
+
+
+
+button:hover {
+    background:#ef7c2c;;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
+}
+
+
+/*estilo para la foto de agregar*/
+#add{
+    height: 40px;
+}
+
+/*estilo para el parrafo que contiene la descripción que no hay pedidos*/
+#BienvenidaP{
+   
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+    line-height: 23px;
+}
+
+/*estilo de "TUS PEDIDOS"*/
+h3{
+    margin-bottom: 30px;
+}
+
+/*Contenedos de los pedidos con sus estilos, mayormente para dimensiónes*/
+
+
+
+#parrafo{
+    text-align: center;
+    color: #fda735;
+}

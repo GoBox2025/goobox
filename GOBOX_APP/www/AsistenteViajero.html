@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/GOBOX_APP/www/estilos/IAestilo.css">
+    <link rel="stylesheet" href="/GOBOX_APP/www/estilos/menu.css">
+    
+</head>
+<body>
+
+    
+    <div id="chat-container"></div>
+    <br>
+    <br>
+
+
+    <div class="navbar">
+        <div class="icon" onclick="expandIcon(this)" ><a href="Home_viajero.html"><img src="/GOBOX_APP/www/img/home.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="viajes.html"><img src="/GOBOX_APP/www/img/viajes.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="lista_pedidos.html"><img src="/GOBOX_APP/www/img/box.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="AsistenteViajero.html"><img src="/GOBOX_APP/www/img/IA.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="ViajeroProfile.html"><img src="/GOBOX_APP/www/img/user.png" alt=""></div></a>
+    </div>
+
+  
+      
+    
+ <script type="text/javascript">
+  (function(d, t) {
+    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    v.onload = function() {
+        window.voiceflow.chat.load({
+            verify: { projectID: "6830fec2df2dd5c17145e885" },
+            url: "https://general-runtime.voiceflow.com",
+            versionID: "production",
+            render: {
+                mode: "embedded", // Asegura que el chat se incruste en la página
+                target: document.getElementById("chat-container") // Lo coloca dentro del div específico
+            }
+        });
+    };
+    v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; 
+    v.type = "text/javascript"; 
+    s.parentNode.insertBefore(v, s);
+})(document, 'script');
+</script>
+
+  
+
+</body>
+</html>

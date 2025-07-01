@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding:0;
+    text-align: center;
+    height: 100%;
+  }
+  
+  #wer{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+   
+    flex-direction: column;
+  }
+  
+  
+  .volver {
+    position: absolute;
+    font-size: 24px;
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(194, 112, 36);
+    left: 0;
+    top: 0;
+  }
+  
+  .naranja {
+    color: rgb(231, 63, 12);
+  }
+  
+  .marron {
+    color: #603a28;
+  }
+  
+  .icono-registro img {
+    width: 100px;
+    margin: 0px 0;
+  }
+  
+
+  #fondoForm{
+     
+     background-color: #ff9600;
+    min-height: 53vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+     border-radius: 15px;
+   
+  }
+  .formulario {
+    width: 90%; 
+  max-width: 90%;
+    padding: 20px;
+ 
+    text-align: left;
+    
+  }
+
+ 
+  
+  .campo {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .campo img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .campo input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .boton-centro {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .boton {
+    padding: 10px 25px;
+    border: none;
+    background-color: white;
+    color: brown;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #f1f1f1;
+  }
+  

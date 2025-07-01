@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pantalla de inicio</title>
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/estile.css">
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/HomeEstilo.css">
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/menu.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="barra-arriba"></div>
+  </header>
+<br><br>
+  <center>
+    <div class="Saludo">
+
+      <br>
+      <br>
+      <img id="logo" src="/GOBOX_APP/www/img/Logo.jpg" alt="">
+      <br>
+
+      <p id="BienvenidaP"></p>
+
+      <div id="listaNotificaciones"></div>
+    </div>
+  </center>
+  <button onclick="window.location.href='publicarpedido.html'"><span><img id="add" src="/GOBOX_APP/www/img/add.png"
+        alt=""></span></button>
+
+
+  <h3 style="color: #542a03;">Tus pedidos</h3>
+
+  <center>
+
+    <div class="listPedidos">
+
+      <table id="tablaPedidos">
+        <tbody class="border">
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </center>
+
+  <br>
+  <br>
+  <br><br>
+
+  <div class="footer">
+    <div class="iconos">
+      <nav class="navbar">
+        <a href="/GOBOX_APP/www/Home_comprador.html"><img src="/GOBOX_APP/www/img/home.png" alt="Inicio"></a>
+        <a href="/GOBOX_APP/www/IACOMPRADOR.html"><img src="/GOBOX_APP/www/img/IA.png" alt=""></a>
+         <a href="notificaciones.html"><img src="/GOBOX_APP/www/img/notificacion.png" alt=""></a>
+        <a href="/GOBOX_APP/www/UserComprador.html"><img src="/GOBOX_APP/www/img/user.png" alt="Perfil"></a>
+      </nav>
+    </div>
+
+    <script type="module" src="/GOBOX_APP/www/codigo/homeComprador.js"></script>
+</body>
+
+</html>

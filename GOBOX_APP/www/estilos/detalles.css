@@ -1,0 +1,223 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 80px;
+}
+
+/* Barra superior */
+.barra-arriba {
+    height: 40px;
+    background-color: #ffa500;
+}
+
+/* Contenedor principal */
+.contenedor {
+    padding: 30px;
+    max-width: 95%;
+    margin: auto;
+}
+
+/* Título principal */
+h1 {
+    color: #542a03;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Subtítulos */
+h2 {
+    color: #542a03;
+    font-size: 18px;
+    margin: 20px 0 5px;
+}
+
+/* Sección de detalles del pedido */
+.detalle {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Inputs */
+.detalle input[type="text"],
+.detalle input[type="number"],
+.detalle input[type="file"] {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.detalle input[type="text"]:focus,
+.detalle input[type="number"]:focus {
+    border-bottom: 2px solid #ff8800;
+}
+
+/* Imagen del pedido */
+#imagen-pedido {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+/* Botón centrado */
+.boton-centro {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 12px; /* espacio entre botones si hay dos */
+}
+    .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Aumentado para más separación */
+    margin: 20px 0;
+}
+
+
+    /* Estilos nuevos del botón */
+    .btn-31,
+    .btn-31 *,
+    .btn-31 :after,
+    .btn-31 :before,
+    .btn-31:after,
+    .btn-31:before {
+      border: 0 solid;
+      box-sizing: border-box;
+    }
+
+    .btn-31 {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-appearance: button;
+      background-color: #ff9500; /* Color normal */
+      margin: 20px 0 60px;
+      padding: 10px 24px;
+      background-image: none;
+      color: #fff; /* Color de texto base */
+      cursor: pointer;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      font-size: 90%;
+      font-weight: 900;
+      line-height: 1.5;
+      -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+      transition: background-color 0.2s ease;
+      border-radius: 12px;
+    }
+
+    .btn-31:active {
+      background-color: #e74504; 
+    }
+
+    .btn-31:disabled {
+      cursor: default;
+    }
+
+    .btn-31:-moz-focusring {
+      outline: auto;
+    }
+
+    .btn-31 {
+      border-width: 1px;
+      padding: 1rem 2rem;
+      position: relative;
+      text-transform: uppercase;
+    }
+
+    .btn-31:before {
+      --progress: 100%;
+      background: #e74504;
+      -webkit-clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+      );
+      clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+      );
+      content: "";
+      inset: 0;
+      position: absolute;
+      transition: -webkit-clip-path 0.2s ease;
+      transition: clip-path 0.2s ease;
+      transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+      border-radius: 11px;
+    }
+
+    .btn-31:hover:before {
+      --progress: 0%;
+    }
+
+    .btn-31 .text-container {
+      display: block;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .btn-31 .text {
+      display: block;
+      font-weight: 900;
+      color: white !important; /* Fuerza el color blanco */
+      position: relative;
+      z-index: 2; /* Asegura que el texto esté sobre otros elementos */
+    }
+
+    .btn-31:hover .text {
+      -webkit-animation: move-up-alternate 0.3s ease forwards;
+      animation: move-up-alternate 0.3s ease forwards;
+    }
+
+
+
+    @keyframes move-up-alternate {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(80%); }
+      51% { transform: translateY(-80%); }
+      to { transform: translateY(0); }
+    }
+
+
+/* Estado */
+#estado-pedido {
+    font-weight: bold;
+    color: #ff8800;
+    margin-top: 10px;
+}
+
+/* Loader opcional */
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ff8800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

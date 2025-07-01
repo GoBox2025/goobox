@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detalles del pedido</title>
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/detalles.css">
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/menu.css">
+
+  <!-- Firebase scripts -->
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+</head>
+<body>
+  <div class="barra-arriba"></div>
+
+  <a href="Home_comprador.html">
+    <img src="/GOBOX_APP/www/img/flechaIzquierda.png" alt="flecha" style="width: auto; height: 30px; margin-left:-330px; padding: 10px;">
+  </a>
+
+  <br>
+
+  <div class="contenedor">
+    <h1>Detalles del pedido</h1>
+
+    <div class="detalle">
+      <!-- Aquí reemplazamos las etiquetas <p> por <input> para que sean editables -->
+<h2>Nombre:</h2>
+<input type="text" id="nombre-pedido" value="Cargando..." />
+
+<h2>Tipo de producto:</h2>
+<input type="text" id="producto-pedido" value="Cargando..." />
+
+<h2>Cantidad:</h2>
+<input type="number" id="cantidad-pedido" value="Cargando..." />
+
+<h2>Peso:</h2>
+<input type="text" id="peso-pedido" value="Cargando..." />
+
+<h2>Tipo de empaquetado:</h2>
+<input type="text" id="empaquetado-pedido" value="Cargando..." />
+
+<h2>Dirección de origen:</h2>
+<input type="text" id="direccion-origen-pedido" value="Cargando..." />
+
+<h2>Dirección de destino:</h2>
+<input type="text" id="direccion-destino-pedido" value="Cargando..." />
+
+<h2>Descripción:</h2>
+<input type="text" id="descripcion-pedido" value="Cargando..." />
+
+<h2>Valor ($):</h2>
+<input type="number" id="costo-pedido" value="Cargando..." />
+
+<h2>Fecha estimada de entrega:</h2>
+<input type="text" id="fecha-estimada-pedido" value="Cargando..." />
+
+<h2>Estado:</h2>
+<p id="estado-pedido"></p>
+
+<center>
+<img id="imagen-pedido" src="" alt="Imagen del Pedido" style="max-width: 25%; height: auto;" />
+<input type="file" id="input-imagen" />
+
+</center>
+
+
+
+  <div class="btn-container">
+    <button class="btn-31">
+        <span class="text-container">
+            <span class="text" onclick="guardarCambios()">Guardar Cambios</span>
+        </span>
+    </button>
+    <button class="btn-31">
+      <span class="text-container">
+        <span class="text" onclick="marcarEntregado()">Confirmar pedido</span>
+      </span>
+    </button>
+
+</div>
+
+ 
+<div class="footer">
+    <div class="iconos">
+      <nav class="navbar">
+        <a href="/GOBOX_APP/www/Home_comprador.html"><img src="/GOBOX_APP/www/img/home.png" alt="Inicio"></a>
+        <a href="/GOBOX_APP/www/BOXBOT.html"><img src="/GOBOX_APP/www/img/IA.png" alt=""></a>
+         <a href="/GOBOX_APP/www/IACOMPRADOR.html"><img src="/GOBOX_APP/www/img/notificacion.png" alt=""></a>
+        <a href="/GOBOX_APP/www/UserComprador.html"><img src="/GOBOX_APP/www/img/user.png" alt="Perfil"></a>
+      </nav>
+    </div>
+    
+  <script type="module" src="/GOBOX_APP/www/codigo/detallesC.js"></script>
+</body>
+</html>

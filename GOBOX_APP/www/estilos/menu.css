@@ -1,0 +1,71 @@
+.barra-arriba {
+    margin-bottom: 30px;
+    height: 40px;
+    background-color: #ffa500;
+}
+
+.navbar {
+    background-color: #f7931e;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    z-index: 1000;
+}
+
+.navbar img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover img {
+    transform: scale(1.2);
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.icon img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.bubble {
+    position: fixed;
+    bottom: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    box-shadow: 0 0 15px rgba(247, 147, 30, 0.8);
+    transition: all 0.3s;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@keyframes move-up-alternate {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(80%); }
+    51% { transform: translateY(-80%); }
+    to { transform: translateY(0); }
+}

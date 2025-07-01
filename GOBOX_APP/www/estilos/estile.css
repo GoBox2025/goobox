@@ -1,0 +1,117 @@
+
+/*estilo para el div que contiene adentro la tabla con los pedidos*/
+.listPedido{
+    
+    width: 350px;
+    display: block; /* o cualquier otro valor de bloque */
+    margin-bottom: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+/*estilo de la tabla de los pedidos*/
+
+table{
+    
+    width: 80%; /*ancho de la tabla*/
+    font-size: 10px;
+    margin: 3px 3px 3px 3px;  /*margen de la tabla*/
+    padding: 2px 2px 2px 2px;
+    border-collapse: separate; /* Evita que las celdas compartan el mismo borde */
+    border-spacing: 3px; /*hace un espacio entre las celdas*/
+   
+   
+  }
+
+  /*estilo para la fila que en el js se creo como clase y aqui se realiza lo que es poner el borde 
+  directamente a la fila y no a las celdas*/
+
+.fila {
+   
+    border-radius: 15px;
+    outline: 2px solid #fda735; /* Borde alrededor de toda la fila */
+  
+  }
+
+  .fila-pedido{
+     border-radius: 15px;
+    outline: 2px solid #fda735; /* Borde alrededor de toda la fila */
+  }
+
+td{
+  padding: 5px;
+}
+  /*estilo para la fila 2, esta solo se creo para hacer espacio entre las filas*/
+  #fila2{
+    height: 5px;
+  }
+ 
+
+ 
+
+  #grosor{
+    width:103px;
+    margin-left: 0%;
+  }
+
+ /*estilo de la flecha hacia la derecha que va dentro del boton*/
+
+#arrow{
+   height: 20px;
+   padding-bottom: 15px;
+}
+
+#arrow2{
+   height: 20px;
+   padding-bottom: 8px;
+}
+/*estilo del boton que va adentro de la tabla de pedidos*/
+#Detalles{
+    width: 30px;
+    background-color: #fda735; 
+    height: 45px;
+    border: none;
+    border-radius: 17px;
+    padding: 2px 2px;
+   margin: 2px 2px 2px 2px;
+   cursor: pointer;
+     
+}
+#Detalles2{
+  width: 30px;
+    background-color: #fda735; 
+    border: none;
+    border-radius: 17px;
+    padding: 2px 2px;
+   margin: 2px 2px 2px 2px;
+   cursor: pointer;
+}
+
+/*estilo para la imagen de la caja que aparece cuando no hay pedidos*/
+#Cajavacia{
+  margin-top: 30px;
+}
+
+/*estilo para la imagen de basurero*/
+#Delete{
+  padding-bottom: 16px;
+   cursor: pointer;
+   
+}
+
+#colordelete{
+   width: 30px;
+    background-color: #fda735; 
+    height: 45px;
+    border: none;
+    border-radius: 17px;
+    padding: 2px 2px;
+   margin: 2px 2px 2px 2px;
+   cursor: pointer;
+}
+
+/*estilo para minimizar el ancho de la celda que contiene el boton de la flecha e imagen de basurero*/
+#celdaBotones{
+  width: 40px;
+   padding: 2px 2px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pantalla de inicio</title>
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/HomeViajeroEstilo.css"/>
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/estile.css"/>
+  <link rel="stylesheet" href="/GOBOX_APP/www/estilos/menu.css">
+
+</head>
+<body  style="background-color: black; color: white;">
+   
+    <header>
+    <div class="barra-arriba"></div>
+  </header>
+
+
+  <div class="formulario-uno">
+    <form action="#">
+      <h2 style="color: white; text-align: left;" id="BienvenidaP"></h2>
+      <input type="search" id="busquedaProductos" placeholder="🔍 Buscar..." class="filtro-carta"/>
+
+    </form>
+  </div>
+
+  <br />
+<center>
+   <section class="proximo-viaje-container">
+  <h2 class="titulo-viaje">Próximo viaje</h2>
+  <div class="viaje-box">
+    <p id="viaje-ruta">Cargando ruta...</p>
+  </div>
+  <div class="viaje-box">
+    <p id="viaje-fecha">Cargando fecha...</p>
+  </div>
+</section>
+
+  </center>
+
+  <br>
+  
+  <h3 style="color:white;">Pedidos hechos por usuarios</h3>
+
+  <center>
+    <div class="listPedidos">
+      <table id="tablaPedidos" class="border">
+        <tbody></tbody>
+      </table>
+    </div>
+  </center>
+  <br>
+  <br>
+
+  
+</div>
+ <div class="navbar">
+        <div class="icon" onclick="expandIcon(this)" ><a href="Home_viajero.html"><img src="/GOBOX_APP/www/img/home.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="viajes.html"><img src="/GOBOX_APP/www/img/viajes.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="lista_pedidos.html"><img src="/GOBOX_APP/www/img/box.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="BOXBOT.html"><img src="/GOBOX_APP/www/img/IA.png" alt=""></div></a>
+        <div class="icon" onclick="expandIcon(this)"><a href="ViajeroProfile.html"><img src="/GOBOX_APP/www/img/user.png" alt=""></div></a>
+    </div>
+
+  <script type="module" src="/GOBOX_APP/www/codigo/homeViajero.js"></script>
+
+
+</body>
+</html>

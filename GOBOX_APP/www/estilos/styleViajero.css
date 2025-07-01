@@ -1,0 +1,552 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #542a03;
+}
+
+/*Diseño para la imagen de cerrar sección.*/
+#logout {
+    height: 50px;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.tabla{
+    border-spacing: 0;
+    width: 95%;
+}
+/*Estilo para la foto de perfil*/
+#userphoto {
+    margin-top: 20px;
+    height: 120px;
+
+}
+
+/*Codigo para los elementos del perfil, telefono, rol etc.*/
+.contenedor {
+    text-align: left;
+    height: 405px;
+    margin-bottom: 30px;
+    width: 75%;
+    background-color: #fda735;
+    border-radius: 15px;
+    max-width: 400px;
+    /* Ancho máximo del div */
+    margin: 0 auto;
+    /* Centra horizontalmente el div */
+    padding: 20px;
+
+}
+
+
+/*Diseño del boton de editar perfil*/
+button {
+    margin-bottom: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fda735;
+    color: white;
+    width: 200px;
+
+}
+
+/*efecto para el boton de envio*/
+button:hover {
+    background-color: #ef7c2c;
+}
+
+/*Estilo para la linea hr que separa los dos contenedores, foto y .contenedor*/
+#separador {
+    margin-bottom: 30px;
+    background-color: #fda735;
+    height: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/*estilo para el select*/
+.Rol {
+    border-radius: 8px;
+    height: 30px;
+    width: 97%;
+    text-align: left;
+    border-color: #fda735;
+    padding-left: 20px;
+}
+
+option {
+    border-radius: 9px;
+}
+
+#userphone {
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 8px;
+    width: 93%;
+    height: 30px;
+    border-color: #fda735;
+}
+
+#Contenedor_nombre{
+    padding: 0%;
+    margin: 0%;
+    width: 90%;
+}
+
+#username {
+    font-size: 25px;
+    padding-left: 8px;
+    width: 80%;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+input:disabled {
+    background-color: white;
+    color: #542a03;
+    font-size: 30px;
+}
+
+select:disabled{
+     opacity: 1 !important;
+    background-color: white;
+    color: #542a03;
+    font-size: 30px;
+    
+}
+
+#userFecha{
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 8px;
+    width: 93%;
+    height: 30px;
+    border-color: #fda735;
+}
+
+#useremail{
+    width: 70%;
+}
+/* Contenedor de botones */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+/* Estilos del botón moderno */
+.btn-31,
+.btn-31 *,
+.btn-31 :after,
+.btn-31 :before,
+.btn-31:after,
+.btn-31:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-31 {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #ff9500;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    transition: background-color 0.2s ease;
+    border-radius: 12px;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-31:active {
+    background-color: #e74504;
+}
+
+.btn-31:disabled {
+    cursor: default;
+}
+
+.btn-31:-moz-focusring {
+    outline: auto;
+}
+
+.btn-31:before {
+    --progress: 100%;
+    background: #e74504;
+    -webkit-clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+    );
+    clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+    );
+    content: "";
+    inset: 0;
+    position: absolute;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+    border-radius: 11px;
+}
+
+.btn-31:hover:before {
+    --progress: 0%;
+}
+
+.btn-31 .text-container {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-31 .text {
+    display: block;
+    font-weight: 900;
+    color: white !important;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-31:hover .text {
+    -webkit-animation: move-up-alternate 0.3s ease forwards;
+    animation: move-up-alternate 0.3s ease forwards;
+}
+
+/* Contenedor nombre y correo alineados a la izquierda */
+#Contenedor_nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear texto a la izquierda */
+    gap: 4px;
+    padding-left: 20px; /* Un poco de margen para que no quede pegado */
+}
+
+.nombre-usuario,
+.correo-usuario {
+    margin: 0;
+    text-align: left; /* Alineado a la izquierda */
+    color: white;
+}
+
+.nombre-usuario {
+    font-size: 28px;
+    font-weight: bold;
+}body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.tabla {
+    border-spacing: 20px;
+    width: 95%;
+}
+
+/* Foto perfil */
+#photo img {
+    margin-top: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 80px;
+}
+
+/* Contenedor del perfil */
+.contenedor {
+    text-align: left;
+    height: auto;
+    margin-bottom: 30px;
+    width: 75%;
+    background-color: #fda735;
+    border-radius: 15px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    color: #542a03;
+}
+
+/* Botón editar */
+button {
+    margin-bottom: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fda735;
+    color: white;
+    width: 200px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ef7c2c;
+}
+
+#separador {
+    margin-bottom: 30px;
+    background-color: #fda735;
+    height: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Select y inputs */
+.Rol {
+    border-radius: 8px;
+    height: 30px;
+    width: 97%;
+    text-align: left;
+    border-color: #fda735;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+option {
+    border-radius: 9px;
+}
+
+#userphone,
+#userFecha {
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 8px;
+    width: 93%;
+    height: 30px;
+    border-color: #fda735;
+}
+
+/* Contenedor nombre y correo alineados a la izquierda */
+#Contenedor_nombre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding-left: 20px;
+    color: white;
+    width: 90%;
+   
+}
+
+/* Nombre y correo */
+.nombre-usuario,
+.correo-usuario {
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+.nombre-usuario {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.correo-usuario {
+    font-size: 20px;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+input:disabled,
+select:disabled {
+    background-color: #fff;
+    color: #542a03;
+    font-size: 20px;
+    opacity: 1 !important;
+}
+
+/* Botón container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+/* Botón moderno */
+.btn-31,
+.btn-31 * {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-31 {
+    -webkit-tap-highlight-color: transparent;
+    background-color: #ff9500;
+    padding: 1rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    transition: background-color 0.2s ease;
+    border-radius: 12px;
+    position: relative;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-31:active {
+    background-color: #e74504;
+}
+
+.btn-31:disabled {
+    cursor: default;
+}
+
+.btn-31:before {
+    --progress: 100%;
+    background: #e74504;
+    -webkit-clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+    );
+    clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+    );
+    content: "";
+    inset: 0;
+    position: absolute;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+    border-radius: 11px;
+}
+
+.btn-31:hover:before {
+    --progress: 0%;
+}
+
+.btn-31 .text-container {
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn-31 .text {
+    display: block;
+    font-weight: 900;
+    color: white !important;
+    position: relative;
+    z-index: 2;
+}
+
+.btn-31:hover .text {
+    -webkit-animation: move-up-alternate 0.3s ease forwards;
+    animation: move-up-alternate 0.3s ease forwards;
+}
+
+/* Botón Logout con imagen, efecto, fondo blanco solo en la imagen */
+.logout-btn {
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent; /* Botón transparente */
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: visible;
+    z-index: 1000;
+}
+
+/* Círculo animado alrededor (más pequeño que la imagen) */
+.logout-btn:before {
+    --progress: 100%;
+    background: #e74504;
+    width: 50px;    /* círculo más pequeño */
+    height: 50px;   /* círculo más pequeño */
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+    clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+    );
+    -webkit-clip-path: polygon(
+        100% 0,
+        var(--progress) var(--progress),
+        0 100%,
+        100% 100%
+    );
+    z-index: 1;
+}
+
+.logout-btn:hover:before {
+    --progress: 0%;
+}
+
+/* Imagen logout con fondo blanco */
+.logout-btn .logout-img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.logout-btn:hover .logout-img {
+    transform: scale(1.1);
+}
+
+/* Centro interno del botón */
+.logout-btn .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.correo-usuario {
+    font-size: 20px;
+    font-weight: normal;
+}
